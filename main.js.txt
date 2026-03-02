@@ -1,0 +1,23 @@
+function upDate(previewPic) {
+    console.log("Mouse over triggered!");
+    console.log("Alt text: " + previewPic.alt);
+    console.log("Source: " + previewPic.src);
+
+    // Đổi text trong div id="image"
+    document.getElementById("image").innerHTML = previewPic.alt;
+
+    // Đổi background image
+    document.getElementById("image").style.backgroundImage = 
+        "url('" + previewPic.src + "')";
+}
+
+function undo() {
+    console.log("Mouse leave triggered!");
+
+    // Trả background về rỗng
+    document.getElementById("image").style.backgroundImage = "url('')";
+
+    // Trả text về mặc định
+    document.getElementById("image").innerHTML = 
+        "Hover over an image below to display here.";
+}

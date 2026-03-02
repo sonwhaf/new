@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Gallery</title>
+    <script src="script.js"></script>
+    <style>
+        #image {
+            width: 500px;
+            height: 300px;
+            border: 2px solid black;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            line-height: 300px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="image">
+    Hover over an image below to display here.
+</div>
+
+<img src="https://via.placeholder.com/150/FF0000"
+     alt="Red Image"
+     onmouseover="upDate(this)"
+     onmouseout="undo()">
+
+<img src="https://via.placeholder.com/150/00FF00"
+     alt="Green Image"
+     onmouseover="upDate(this)"
+     onmouseout="undo()">
+
+<img src="https://via.placeholder.com/150/0000FF"
+     alt="Blue Image"
+     onmouseover="upDate(this)"
+     onmouseout="undo()">
+
+</body>
+</html>
